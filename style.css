@@ -174,32 +174,222 @@
     color: var(--green);
     transition: .5s ease;
   }
-  .header__right {
-
-  }
   /* BANNER */
   .banner{
     background-color: var(--gray);
     padding-top: 5rem;
   }
-  banner__wrapper{
-    position: absolute;
+  .banner__wrapper{
+   display: flex;
+  }
+  .banner__left{
+    padding-left: 15rem;
+    padding-top: 25rem;
   }
   .banner__left h1{
     font-size: 10rem;
     line-height: 1;
-    max-width: 80rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+  .banner__left span{
+    color: var(--green);
   }
   .banner__right{
     position: relative;
-    left: 140rem;
+    left: 25rem;
+    top: 0;
   }
   .banner__right img{
-    width: 50rem;
+    width:100rem;
+    height: 70rem;
   }
+  /* ABOUT */
+  .about{
+    padding-bottom: 5rem;
+  }
+  .about__wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .about__left{
+    position: relative;
+    right: -25rem;
+    transform: translateY(-1.5rem);
+  }
+  .about__left img{
+    width: 40rem;
+    border-radius: 1rem;
+  }
+  .about__right{
+    margin-top: 4rem;
+  }
+  .about__right h2{
+    font-size: 7rem;
+    font-weight: 500;
+  }
+  .about__right p{
+    font-weight: 300;
+  }
+  .about__right ul{
+    display: flex;
+    gap: 3rem;
+    padding-top: 3rem;
+    font-size: 1.7rem;
+  }
+  .about__nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about__nav li {
+    display: inline;
+  }
+  
+  .about__nav li{
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .about__nav li::after {
+    content: '';
+    position: absolute; 
+    height: 2px;
+    width: 0%;
+    background-color: gray;
+    transition:300ms;
+    display: block;
+  }
+  
+  .about__nav li:hover::after {
+    border-color: var(--green);
+    width: 100%;
+  }
+  
+  .about__nav ul li{
+    color: var(--dark);
+  } 
+  .about__nav ul li:hover{
+    color: var(--green);
+
+  }
+  .about__skills{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about__title li{
+    display: inline-block;
+  }
+  .about__right span{
+    color: var(--dark);
+    font-weight: 600;
+  }
+  
+  /* DESIGN FOR JSCRIPT */
+  .about__title li:first-child.open{
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+  }
+  .about__skills{
+    display: none;
+  }
+  .about__skills.open{
+    display: block;
+    transition: .5s ease-in-out;
+  }
+  /* SERVICES */
+  .services{
+    padding: 5rem 0;
+  }
+  .services__title{
+    text-align: center;
+  }
+  .services__title h3{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .services__title p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+  .services__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+  .services__card{
+    height: 35rem;
+    margin-top: 4rem;
+    width: 30rem;
+    background: var(--gray);
+    padding: 7rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .services__card span{
+    color: var(--green);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    margin-right: 20rem;
+  }
+  .services__card h4{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
+  .services__card p{
+    font-weight: 300;
+    max-width: 20rem;
+  }
+  /* BEST CLIENT */
+.client{
+  padding: 5rem 0;
+}
+.client__title{
+  text-align: center;
+}
+.client__title h3{
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.client__title p{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.client__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .1rem;
+}
+/* MBC Logo */
+.client__card{
+  height: 35rem;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray);
+}
+.client__card span{
+  color: var(--green);
+  font-size: 10rem;
+}
+  
   /* REPEATABLE PATTERNS */
   :root{
-    --green: green;
+    --green: rgb(100, 204, 100);
     --light: #ffffff;
     --dark: black;
     --gray: #d3d3d3;
@@ -223,3 +413,6 @@
     border:1px solid var(--dark);
     color: var(--dark);
   }
+
+
+  
