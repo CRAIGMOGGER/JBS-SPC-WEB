@@ -320,9 +320,11 @@
   }
   .services__wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem;
-  }
+    grid-template-columns: 30rem 30rem 30rem;
+    gap: 3rem;
+    align-content: center;
+    justify-content: center;
+   }
   .services__card{
     height: 35rem;
     margin-top: 4rem;
@@ -337,9 +339,9 @@
   }
   .services__card span{
     color: var(--green);
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    margin-right: 20rem;
+    margin-right: 8rem;
   }
   .services__card h4{
     font-size: 2.5rem;
@@ -352,7 +354,7 @@
   }
   /* BEST CLIENT */
 .client{
-  padding: 5rem 0;
+  padding: 5rem 0rem;
 }
 .client__title{
   text-align: center;
@@ -369,8 +371,10 @@
 }
 .client__wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: .1rem;
+  grid-template-columns: 30rem 30rem 30rem;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
 }
 /* MBC Logo */
 .client__card{
@@ -386,7 +390,32 @@
   color: var(--green);
   font-size: 10rem;
 }
-  
+/* PROJECT */
+  .project{
+    padding: 5rem 0rem;
+  }
+  .project__title{
+    text-align: center;
+  }
+  .project__title h3{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .project__title p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+  .project__wrapper{
+    display: grid;
+    grid-template-columns: 30rem 30rem 30rem;
+    gap: 3rem;
+    align-content: center;
+    justify-content: center;
+  }
+
+
   /* REPEATABLE PATTERNS */
   :root{
     --green: rgb(100, 204, 100);
@@ -413,6 +442,8 @@
     border:1px solid var(--dark);
     color: var(--dark);
   }
+
+  
 
 
   
